@@ -7,7 +7,7 @@
 :root{--cr:#f4ede1;--be:#e6d9c3;--dk:#241610;--ac:#b08a64;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html,body{cursor:none;height:100%;margin:0;background:#0d0705;overflow:hidden}
 body{display:flex;align-items:center;justify-content:center;font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;user-select:none;-webkit-user-select:none}
-#st{position:relative;width:min(100vw,177.78vh);height:min(56.25vw,100vh);overflow:hidden;background:var(--dk);color:var(--cr);cursor:none}
+#st{position:relative;width:min(100vw,150vh);height:min(66.667vw,100vh);overflow:hidden;background:var(--dk);color:var(--cr);cursor:none}
 .sc{position:absolute;inset:0;padding:0 8rem;display:flex;flex-direction:column;justify-content:center;opacity:0;visibility:hidden;transition:opacity .7s,visibility .7s;background:var(--bg,var(--dk));color:var(--fg,var(--cr))}
 .sc.on{opacity:1;visibility:visible}
 .sc.l{--bg:var(--cr);--fg:var(--dk)}.sc.b{--bg:var(--be);--fg:var(--dk)}
@@ -104,7 +104,7 @@ S.forEach((s,i)=>s.classList.toggle('on',i===n));
 if(n===2)count();sfx(n);
 const d=+S[n].dataset.d;if(auto&&d)t=setTimeout(()=>go(n+1),d)}
 function fs(){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}}
-st.addEventListener('click',e=>{if(e.target.closest('#start'))return;if(c<S.length-1)go(c+1)});
+st.addEventListener('click',e=>{if(e.target.closest('#start'))return;const r=st.getBoundingClientRect();if(e.clientX-r.left<r.width/2){if(c>0)go(c-1)}else if(c<S.length-1)go(c+1)});
 addEventListener('keydown',e=>{if(['ArrowRight',' ','ArrowDown'].includes(e.key)){e.preventDefault();go(c+1)}else if(['ArrowLeft','ArrowUp'].includes(e.key))go(c-1);else if(e.key==='f')fs();else if(e.key==='a'){auto=!auto;go(c)}else if(e.key==='r'){go(0)}else if(e.key==='m'&&M){M.gain.value=M.gain.value===0?1:0}});
 
 let AC=null,M=null,tm=[];
