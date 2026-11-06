@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Premium Hoodie — Ad</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap">
+<style>
+:root{--cr:#f4ede1;--be:#e6d9c3;--dk:#241610;--ac:#b08a64;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{cursor:none;height:100%;margin:0;background:#0d0705;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;user-select:none;-webkit-user-select:none}
+#st{position:relative;width:min(100vw,177.78vh);height:min(56.25vw,100vh);overflow:hidden;background:var(--dk);color:var(--cr);cursor:none}
+.sc{position:absolute;inset:0;padding:0 8rem;display:flex;flex-direction:column;justify-content:center;opacity:0;visibility:hidden;transition:opacity .7s,visibility .7s;background:var(--bg,var(--dk));color:var(--fg,var(--cr))}
+.sc.on{opacity:1;visibility:visible}
+.sc.l{--bg:var(--cr);--fg:var(--dk)}.sc.b{--bg:var(--be);--fg:var(--dk)}
+.ln{display:block;overflow:hidden;padding:.3rem 0}
+.ln>span{display:block;transform:translateY(115%);transition:transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i,0)*.28s + .25s)}
+.on .ln>span{transform:none}
+.H{font-size:8rem;line-height:1.12;font-weight:700;margin:0}
+.M{font-size:5.4rem;line-height:1.15;font-weight:600;margin:0}
+.S{font-size:2.2rem;font-weight:400;opacity:.85;margin:0;line-height:1.5}
+.ac{color:var(--ac)}
+.en{font-family:system-ui,'Helvetica Neue',Arial,sans-serif;letter-spacing:.02em}
+.knit{position:absolute;inset:-10%;opacity:.55;background:repeating-linear-gradient(90deg,rgba(244,237,225,.17) 0 3px,transparent 3px 14px),repeating-linear-gradient(0deg,rgba(244,237,225,.1) 0 4px,transparent 4px 12px);transform:scale(3);filter:blur(8px);transition:transform 4.5s cubic-bezier(.2,.6,.2,1),filter 3.5s}
+.on .knit{transform:scale(1);filter:none}
+.vg{position:absolute;inset:0;background:radial-gradient(ellipse at 35% 50%,rgba(36,22,16,.1),rgba(36,22,16,.9) 78%)}
+.z{position:relative}
+.cnt{font-size:15rem;font-weight:700;line-height:1;letter-spacing:.01em}
+.lay{display:flex;gap:1.4rem;align-items:flex-end;margin-top:3rem;height:9rem}
+.lay i{flex:1;transform:scaleY(0);transform-origin:bottom;transition:transform 1.1s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*.3s + 1.2s);background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 2px,transparent 2px 9px),var(--c)}
+.on .lay i{transform:none}
+.split{display:flex;align-items:center;gap:4rem;height:100%}.split>div{flex:1}
+.pic{height:48rem;object-fit:cover;transform:scale(1.2) translateX(6rem);opacity:0;transition:transform 5s cubic-bezier(.2,.6,.2,1),opacity 1.4s}
+.on .pic{transform:none;opacity:1}
+.sw{display:flex;gap:2.6rem;margin-top:3.5rem}.sw div{text-align:center;font-size:1.5rem}
+.sw i{display:block;width:10rem;height:10rem;border-radius:50%;margin-bottom:1rem;box-shadow:0 1rem 2rem rgba(0,0,0,.4),inset 0 0 0 .25rem rgba(255,255,255,.14);transform:scale(0);transition:transform .9s cubic-bezier(.3,1.5,.5,1);transition-delay:calc(var(--i)*.35s + 1.2s)}
+.on .sw i{transform:none}
+.tri{display:flex;gap:2rem;justify-content:center;margin-top:2rem}
+.tri img{width:22rem;height:32rem;object-fit:cover;clip-path:inset(100% 0 0 0);transition:clip-path 1.2s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*.55s + .4s)}
+.on .tri img{clip-path:inset(0)}
+.sz{display:flex;gap:3rem;margin-top:3rem}
+.sz b{font-size:11rem;line-height:1;font-weight:700;border:3px solid var(--fg);padding:1.4rem 3rem;transform:scale(2.2);opacity:0;transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .3s;transition-delay:calc(var(--i)*.55s + .5s)}
+.on .sz b{transform:none;opacity:1}
+.fz line{stroke:#c9a67e;stroke-width:2;stroke-linecap:round;transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);transition:transform 1.3s cubic-bezier(.2,.8,.2,1);transition-delay:calc(1s + var(--j)*.03s)}
+.on .fz line{transform:none}
+.cta{font-size:2.3rem;line-height:1.55;max-width:70rem}
+#seg{position:absolute;top:1.4rem;left:2rem;right:2rem;display:flex;gap:.5rem;z-index:9}
+#seg i{flex:1;height:.25rem;background:rgba(150,130,110,.4);overflow:hidden}#seg b{display:block;height:100%;width:0;background:var(--ac)}
+#ctl{position:absolute;right:2rem;bottom:1.2rem;z-index:9;display:flex;gap:.8rem}
+#ctl button{all:unset;cursor:pointer;font:500 1rem system-ui,sans-serif;color:var(--ac);border:1px solid currentColor;padding:.25rem .7rem;background:rgba(13,7,5,.5)}
+#ctl button:focus-visible{outline:2px solid var(--ac)}
+#start{position:absolute;inset:0;z-index:20;background:#1a0f0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;color:var(--cr)}#start b{font-size:4rem;font-weight:600}#start span{font-size:1.5rem;opacity:.7}#start i{font-style:normal;font-size:1.8rem;border:2px solid var(--ac);color:var(--ac);padding:.8rem 2.4rem}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01s!important;transition-delay:0s!important}}
+</style></head><body>
+<div id="st"><div id="seg"></div>
+
+<section class="sc" data-d="4300"><div class="knit"></div><div class="vg"></div><div class="z">
+<h1 class="H ln"><span style="--i:0">শীত আসছে।</span></h1><h1 class="H ln ac"><span style="--i:2">আরামও চাই।</span></h1></div></section>
+
+<section class="sc l" data-d="4300"><div class="z"><p class="S ln en"><span style="--i:0">PREMIUM</span></p>
+<h1 class="H ln"><span style="--i:1">১০০% কটন</span></h1>
+<p class="M ln" style="margin-top:1rem"><span style="--i:3" class="ac">নরম। আরামদায়ক। ত্বকবান্ধব।</span></p></div></section>
+
+<section class="sc b" data-d="4800"><div class="z"><p class="S ln"><span style="--i:0">ভারী, ঘন, স্ট্রাকচার্ড অনুভূতি</span></p>
+<div class="cnt en"><span id="cn">0</span> <span class="M">GSM</span></div>
+<div class="lay"><i style="--i:0;--c:#e0d0b4;height:25%"></i><i style="--i:1;--c:#c9ae88;height:45%"></i><i style="--i:2;--c:#a78560;height:70%"></i><i style="--i:3;--c:#7b5a40;height:100%"></i></div></div></section>
+
+<section class="sc" data-d="4500"><div class="split"><div><h1 class="M ln"><span style="--i:0">ওয়ান-সাইড</span></h1><h1 class="M ln ac"><span style="--i:1">ব্রাশড</span></h1><p class="S ln" style="margin-top:1.4rem"><span style="--i:3">এক পাশে নরম, হালকা Fuzzy Texture</span></p></div>
+<div><svg id="fz" viewBox="0 0 400 160" style="width:100%"></svg></div></div></section>
+
+<section class="sc l" data-d="4700"><div class="split"><div><h1 class="H ln"><span style="--i:1">সেমি-ব্যাগি</span></h1><h1 class="H ln ac"><span style="--i:2">ফিট।</span></h1><p class="S ln" style="margin-top:1rem"><span style="--i:4">ছেলে-মেয়ে সবার জন্য।</span></p></div>
+<div style="flex:none"><img class="pic" src="1.png" alt="hoodie"></div></div></section>
+
+<section class="sc" data-d="4800"><div class="z"><h1 class="M ln"><span style="--i:0">৫টি রং।</span></h1><h1 class="M ln ac"><span style="--i:1">আপনার পছন্দ।</span></h1>
+<div class="sw"><div><i style="--i:0;background:#5a1a22"></i>মেরুন</div><div><i style="--i:1;background:#121212"></i>কালো</div><div><i style="--i:2;background:#efe8da"></i>অফ-হোয়াইট</div><div><i style="--i:3;background:#3b2420"></i>ডার্ক ব্রাউন</div><div><i style="--i:4;background:#0f4d44"></i>ডার্ক গ্রিন</div></div></div></section>
+
+<section class="sc" data-d="4600" style="padding-top:5rem"><h1 class="M ln" style="text-align:center"><span style="--i:0">৩টি ডিজাইন</span></h1>
+<div class="tri"><img style="--i:1" src="2.png" alt=""><img style="--i:2" src="3.png" alt=""><img style="--i:3" src="4.png" alt=""></div></section>
+
+<section class="sc b" data-d="4000"><div class="z"><h1 class="M ln"><span style="--i:0">আপনার সাইজ</span></h1><div class="sz en"><b style="--i:0">M</b><b style="--i:1">L</b><b style="--i:2">XL</b></div>
+<p class="S ln" style="margin-top:2.5rem"><span style="--i:6">সাইজ মেজারমেন্ট দেখে বেছে নিন।</span></p></div></section>
+
+<section class="sc" data-d="0"><div class="knit" style="opacity:.3"></div><div class="vg"></div><div class="z split"><div>
+<h1 class="M ln"><span style="--i:0">পছন্দের হুডিটি</span></h1><h1 class="M ln ac"><span style="--i:1">এখনই অর্ডার করুন।</span></h1>
+<p class="cta ln" style="margin-top:2rem"><span style="--i:3">প্রিমিয়াম ১০০% কটন, ওয়ান-সাইড ব্রাশড ৩৩০–৩৫০ GSM সেমি-ব্যাগি হুডি।</span></p>
+<p class="cta ln ac"><span style="--i:4">আমাদের Facebook Shop-এ যোগাযোগ করুন — সাইজ মেজারমেন্ট দেখে অর্ডার করুন।</span></p></div>
+<div style="flex:none"><img class="pic" style="height:44rem" src="5.png" alt="Green hoodie"></div></div></section>
+
+<div id="start"><b>প্রিমিয়াম হুডি</b><span>সাউন্ডসহ ফুলস্ক্রিনে দেখতে ট্যাপ করুন</span><i>▶ চালু করুন</i></div>
+</div>
+<script>
+const $=id=>document.getElementById(id),st=$('st'),S=[...document.querySelectorAll('.sc')],seg=$('seg');
+let c=-1,t=null,auto=false;
+S.forEach(()=>seg.insertAdjacentHTML('beforeend','<i><b></b></i>'));
+function fit(){document.documentElement.style.fontSize=st.clientWidth/100+'px'}addEventListener('resize',fit);fit();
+// fuzz
+let h='<g fill="none" stroke="#8b6b4e" stroke-width="3.5">';
+for(let r=0;r<3;r++)for(let i=0;i<14;i++)h+=`<ellipse cx="${30+i*27+(r%2)*13}" cy="${110+r*18}" rx="16" ry="10"/>`;
+h+='</g><g class="fz">';
+for(let i=0;i<64;i++){const x=10+i*6.1,l=16+(i*37%19),a=((i*53%11)-5)*2.4;h+=`<line style="--j:${i}" x1="${x}" y1="100" x2="${x+a}" y2="${100-l}"/>`}
+$('fz').innerHTML=h+'</g>';
+function count(){const e=$('cn'),T=performance.now();(function f(n){const p=Math.min(1,(n-T)/2200);e.textContent=p<1?Math.round(350*(1-Math.pow(1-p,3))).toLocaleString('bn-BD'):'৩৩০–৩৫০';if(p<1)requestAnimationFrame(f)})(T)}
+function go(n){clearTimeout(t);n=Math.max(0,Math.min(S.length-1,n));c=n;
+S.forEach((s,i)=>s.classList.toggle('on',i===n));
+[...seg.children].forEach((e,i)=>{const b=e.firstChild;b.style.transition='none';b.style.width=i<n?'100%':'0';if(i===n&&auto&&+S[n].dataset.d){void b.offsetWidth;b.style.transition=`width ${S[n].dataset.d}ms linear`;b.style.width='100%'}if(i===n&&!+S[n].dataset.d)b.style.width='100%'});
+if(n===2)count();sfx(n);
+const d=+S[n].dataset.d;if(auto&&d)t=setTimeout(()=>go(n+1),d)}
+function fs(){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}}
+st.addEventListener('click',e=>{if(e.target.closest('#start'))return;if(c<S.length-1)go(c+1)});
+addEventListener('keydown',e=>{if(['ArrowRight',' ','ArrowDown'].includes(e.key)){e.preventDefault();go(c+1)}else if(['ArrowLeft','ArrowUp'].includes(e.key))go(c-1);else if(e.key==='f')fs();else if(e.key==='a'){auto=!auto;go(c)}else if(e.key==='r'){go(0)}else if(e.key==='m'&&M){M.gain.value=M.gain.value===0?1:0}});
+
+let AC=null,M=null,tm=[];
+function A(){if(!AC){AC=new(window.AudioContext||window.webkitAudioContext)();M=AC.createGain();M.connect(AC.destination)}if(AC.state==='suspended')AC.resume();return AC}
+function noise(d,f0,f1,g,ty='bandpass'){if(!AC)return;const a=AC,n=a.sampleRate*d,b=a.createBuffer(1,n,a.sampleRate),x=b.getChannelData(0);for(let i=0;i<n;i++)x[i]=Math.random()*2-1;const s=a.createBufferSource();s.buffer=b;const f=a.createBiquadFilter();f.type=ty;f.Q.value=1.2;const t=a.currentTime;f.frequency.setValueAtTime(f0,t);f.frequency.exponentialRampToValueAtTime(f1,t+d);const v=a.createGain();v.gain.setValueAtTime(.0001,t);v.gain.exponentialRampToValueAtTime(g,t+d*.4);v.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(f);f.connect(v);v.connect(M);s.start()}
+function tone(f0,f1,d,g,ty='sine'){if(!AC)return;const a=AC,o=a.createOscillator(),v=a.createGain(),t=a.currentTime;o.type=ty;o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+d);v.gain.setValueAtTime(g,t);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v);v.connect(M);o.start();o.stop(t+d)}
+const wh=()=>noise(.9,300,3200,.3),th=()=>{tone(140,40,.5,.8);noise(.15,2000,200,.2,'lowpass')},pp=i=>()=>tone(400+i*120,900+i*160,.18,.35),tk=i=>()=>tone(1200+i*30,1200+i*30,.04,.12,'square'),sw=()=>noise(.35,2500,6000,.14,'highpass'),ch=()=>[523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,f,1.6,.2,'triangle'),i*160));
+const tks=[...Array(21)].map((_,i)=>[i*105,tk(i)]);
+const SF=[[[250,th],[900,th]],[[0,wh]],[[0,wh],...tks,[2300,th]],[[0,wh],[1000,sw],[1500,sw],[2000,sw],[2500,sw]],[[0,wh],[300,wh]],[[0,wh],...[0,1,2,3,4].map(i=>[1200+i*350,pp(i)])],[[0,wh],[950,sw],[1500,sw],[2050,sw]],[[0,wh],[500,th],[1050,th],[1600,th]],[[0,wh],[300,th],[1200,ch]]];
+function sfx(n){tm.forEach(clearTimeout);tm=[];if(!AC)return;(SF[n]||[]).forEach(([ms,f])=>tm.push(setTimeout(f,ms)))}
+$('start').onclick=()=>{A();if(!document.fullscreenElement)fs();$('start').style.display='none';
+[82,123].forEach(f=>{const o=AC.createOscillator(),v=AC.createGain();o.frequency.value=f;v.gain.value=.025;o.connect(v);v.connect(M);o.start()});go(0)};
+</script></body></html>
